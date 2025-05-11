@@ -1,0 +1,77 @@
+.Contact {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.map-container {
+    width: 70%;
+    min-width: 300px;
+}
+
+.contact-form {
+    margin-top: 1rem;
+    width: 50%;
+    min-width: 300px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: var(--new-font-weight-bold);
+}
+
+.contact-form input,
+.contact-form textarea {
+    /*width: 100%;*/
+    padding: 0.75rem;
+    border: 1px solid var(--new-border-color);
+    border-radius: var(--new-border-radius);
+    font-size: var(--new-font-size-default);
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.upload-button {
+    background-color: #f1f1f1;
+    border: 1px solid var(--new-border-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--new-border-radius);
+    cursor: pointer;
+}
+
+.submit-button {
+    background-color: var(--new-primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--new-border-radius);
+    cursor: pointer;
+    transition: background-color var(--new-transition-duration);
+}
+
+.submit-button:hover {
+    background-color: var(--new-primary-color-hover);
+}

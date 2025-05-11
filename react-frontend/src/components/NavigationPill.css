@@ -1,0 +1,35 @@
+/* Base styles for the pill */
+.navigation-pill {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 50px; /* Rounded pill shape */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Black text */
+    background: #fff; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none; /* Remove focus outline */
+}
+
+/* Remove grey box (focus styles) */
+.navigation-pill:focus,
+.navigation-pill:active {
+    outline: none; /* Prevent default outline */
+    box-shadow: none; /* Remove box shadow on active/focus */
+}
+
+/* Hover effect */
+.navigation-pill:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow */
+}
+
+/* Active pill state */
+.navigation-pill.active {
+    background: linear-gradient(to bottom, #fff, #fff, #fff, #4685ff); /* Gradient background */
+    /*border-bottom: 3px solid #005af0; !* Blue bottom border *!*/
+    color: #000;
+}

@@ -1,0 +1,113 @@
+.Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background-base--default);
+    color: var(--text-color--default);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: #BBBBBB 1px 0 3px;
+    white-space: nowrap;
+    gap: 5rem;
+}
+
+.Menu .logo img {
+    height: 3rem;
+}
+
+.Menu .links {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.Menu .links a {
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+.Menu .links a:hover, .Menu .links a:focus, .Menu .links a:active {
+    background-color: var(--background-base--secondary);
+    text-decoration: none;
+}
+
+.Menu button {
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+.Menu .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Dropdown and Hamburger Button styles */
+.Menu .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 3.5rem; /* Position it below the menu */
+    right: 2rem;
+    background-color: var(--background-base--default);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    z-index: 1001; /* Make sure it's above other elements */
+    display: none;
+}
+
+.Menu .dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color--default);
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.Menu .dropdown a:hover {
+    background-color: var(--background-base--secondary);
+}
+
+.Menu .hamburger {
+    display: none; /* Hide hamburger icon by default */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    gap: 4px;
+}
+
+.Menu .hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-color--default);
+}
+
+/* Mobile view: Use media query to change layout */
+@media (max-width: 768px) {
+    .Menu .links {
+        display: none; /* Hide links on small screens */
+    }
+
+    .Menu .hamburger {
+        display: flex; /* Show hamburger icon on small screens */
+    }
+
+    .Menu .dropdown.show {
+        display: block; /* Show dropdown when the hamburger is clicked */
+    }
+
+    .Menu .actions {
+        display: none; /* Hide actions on small screens */
+    }
+}

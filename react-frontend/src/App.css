@@ -1,0 +1,23 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    /*padding: 1rem;*/
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+}
+

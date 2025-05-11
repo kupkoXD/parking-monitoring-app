@@ -1,0 +1,21 @@
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.about-text {
+    max-width: 60%;
+    min-width: 300px;
+    width: 60%
+}

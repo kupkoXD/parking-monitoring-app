@@ -1,0 +1,25 @@
+/* Base styles for the Sign In button */
+.sign-in-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 50px; /* Rounded shape */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+    background: #005af0; /* Primary blue background */
+    border-bottom: 3px solid #0040c1; /* Darker border for depth */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none; /* Remove outline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.sign-in-button:hover {
+    background: #3d8bff; /* Lighter blue background */
+    border-bottom: 3px solid #005af0; /* Keep the primary blue border */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}

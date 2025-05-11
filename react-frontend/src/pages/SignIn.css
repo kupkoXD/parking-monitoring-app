@@ -1,0 +1,34 @@
+.SignIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: var(--background-base--default); /* Optional: Add a background color */
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.sign-in-form .react-aria-Button,
+.sign-in-form .react-aria-TextField{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.sign-in-form .react-aria-Input {
+    min-width: 300px;
+    border-radius: 50px;
+}
+
+.SignIn .logo-big img{
+    max-width: 300px;
+    padding-bottom: 2rem;
+    display: flex;
+}

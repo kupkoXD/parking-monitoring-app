@@ -1,0 +1,76 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--new-background-base--default);
+    color: var(--new-text-color--default);
+    box-shadow: #BBBBBB 1px 0 3px;
+    overflow-y: auto;
+    transition: width var(--new-transition-duration);
+}
+
+.Sidebar.collapsed {
+    width: 60px;
+}
+
+.Sidebar.open {
+    width: 250px;
+}
+
+.Sidebar.collapsed .text, .Sidebar.collapsed .arrow  {
+    display: none;
+}
+
+.ParkingLot {
+    margin-bottom: 1rem;
+}
+
+.ParkingLotHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ParkingLot h3 {
+    margin: 0;
+}
+
+.arrow {
+    transition: transform var(--new-transition-duration);
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.CameraList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.CameraList li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.CameraList li:hover {
+    background-color: #ddd;
+}
+
+.toggle-button {
+    background-color: var(--new-primary-color);
+    color: white;
+    padding: var(--new-button-padding);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    transition: background-color var(--new-transition-duration);
+}
+
+.toggle-button:hover {
+    background-color: var(--new-primary-color-hover);
+}

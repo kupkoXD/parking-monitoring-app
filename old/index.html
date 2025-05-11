@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUKE Parking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h1>TUKE</h1>
+        <ul>
+            <li onclick="showCameraView()">Hlavné parkovisko</li>
+            <li>Parkovisko PK6</li>
+            <li>Štud. parkovisko</li>
+            <li>Siemens park.</li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="links">
+                <a href="#">O nás</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <button class="sign-in">Sign in</button>
+        </div>
+
+        <!-- Main Section -->
+        <div id="camera-view" class="camera-view">
+            <div class="camera-image">
+                <img src="assets/camera_view.png" alt="Camera View">
+            </div>
+            <div class="camera-info">
+                <div class="status">
+                    <div class="free">Voľné: 3</div>
+                    <div class="occupied">Obsadené: 20</div>
+                </div>
+                <div class="controls">
+                    <label class="toggle">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                        <span>Rámčeky</span>
+                    </label>
+                    <button class="navigate">Navigovať</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showCameraView() {
+        document.getElementById('camera-view').style.display = 'flex';
+    }
+</script>
+</body>
+</html>

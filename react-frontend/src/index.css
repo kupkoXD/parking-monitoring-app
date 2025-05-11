@@ -1,0 +1,153 @@
+:root {
+  --color--primary-white: #FFF;
+  --color--secondary-blue-light: #A3E9F6;
+  --color--greyscale-grey100: #f5f5f5;
+  --color--greyscale-grey200: #e6e6e6;
+  --color--greyscale-grey300: #d9d9d9;
+  --color--greyscale-grey400: #b3b3b3;
+  --color--greyscale-grey500: #757575;
+  --color--greyscale-grey600: #444;
+  --color--greyscale-grey700: #383838;
+  --color--greyscale-grey800: #2c2c2c;
+  --color--greyscale-grey900: #1e1e1e;
+  --color--greyscale-grey1000: #111;
+  --color--primary-black: var(--color--greyscale-grey800);
+  --color--blue: #006fff;
+
+  --new-background-base--default: #f0f0f0;
+  --new-text-color--default: #333;
+  --new-primary-color: #005af0;
+  --new-primary-color-hover: #0048c2;
+  --new-button-radius: 5px;
+  --new-button-padding: 0.5rem;
+  --new-font-size-default: 1rem;
+  --new-font-weight-bold: bold;
+  --new-border-color: #ccc;
+  --new-border-radius: 5px;
+  --new-transition-duration: 0.3s;
+
+  --color--success-default: #14AE5C;
+  --color--warning-default: #E8B931;
+  --color--danger-default: #EC221F;
+  /* pridat dalsie potrebne farby */
+
+  /* max 2 fonty v dizajne pre konzistentnost */
+  --typography--title: "Inter", sans-serif;
+  --typography--body-base: "Roboto", sans-serif;
+
+  /* farby textu */
+  --text-color--default: var(--color--greyscale-grey900);
+  --text-color--secondary: var(--color--greyscale-grey500);
+  --text-color--tertiary: var(--color--greyscale-grey400);
+
+  /* ine farby */
+  --border--default: var(--color--greyscale-grey300);
+  --border--secondary: var(--color--greyscale-grey500);
+  --border--tertiary: var(--color--greyscale-grey700);
+
+  /* farby pozadia */
+  --background-base--default: var(--color--primary-white);
+  --background-base--hover: var(--color--greyscale-grey100);
+  /*--background-base--secondary: var(--color--greyscale-grey100);*/
+  --background-base--secondary-hover: var(--color--greyscale-grey200);
+  --background-base--tertiary: var(--color--greyscale-grey300);
+  --background-base--tertiary-hover: var(--color--greyscale-grey400);
+  --background-disabled: var(--color--greyscale-grey300);
+  --background-blue: #99c9ff;
+
+  /* velkosti textu */
+  --title-hero: 4.5rem;
+  --title-page: 3rem;
+  --subtitle: 2rem;
+  --heading: 1.5rem;
+  --subheading: 1.25rem;
+  --body-base: 16px; /* takto je mozne vsetky velkosti menit na jednom mieste vdaka pouzivanym rem jednotkam */
+}
+
+body {
+  margin: 0;
+  font-size: var(--body-base);
+  font-family: var(--typography--body-base);
+  color: var(--text-color);
+  font-optical-sizing: auto;
+  line-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, .title-hero {line-height: 120%; font-family: var(--typography--title)}
+
+.title-hero { font-size: var(--title-hero); font-weight: bold; letter-spacing: -0.135rem;}
+h1, .title-page { font-size: var(--title-page); font-weight: bold; letter-spacing: -0.06rem; }
+h2, .subtitle { font-size: var(--subtitle); font-weight: bold; color: var(--text-color--secondary); }
+h3, .heading { font-size: var(--heading); font-weight: bold;  }
+h4, .subheading { font-size: var(--subheading); font-weight: normal; }
+h5 { font-size: var(--body-base); font-weight: bold }
+
+.hero-section {
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  background-color: var(--color--greyscale-grey100);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  min-height: 4rem;
+  padding: 2rem 1rem;
+}
+
+/* OLD index.css */
+.top-movies { background-color: var(--color--primary-white) }
+.top-series { background-color: var(--color--secondary-blue-light) }
+.best-uploaders { background-color: var(--color--primary-white) }
+
+/** STYLING REACT-ARIA COMPONENTS **/
+
+.react-aria-Button { /* prebrate z prikladu na webe react-aria */
+  font-size: var(--body-base);
+  background-color: var(--color--blue);
+  color: var(--background-base--default);
+  border: 2px solid var(--color--blue);
+  border-radius: 0.5rem;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0; padding: 0.75rem 1rem; /* padding si prisposobim */
+  outline: none; text-decoration: none;
+  display: flex;
+  justify-content: center; align-items: center;
+}
+
+.react-aria-Button[data-pressed] {
+  color: var(--color--primary-black);
+  background-color: var(--background-base--tertiary);
+  border: 1px solid var(--border--tertiary);
+}
+
+.react-aria-Button[data-focus-visible], .react-aria-Button[data-hovered] {
+  color: var(--color--primary-black);
+  border: 2px solid var(--color--blue);
+  outline-offset: -1px;
+  background-color: var(--background-blue);
+}
+
+.react-aria-Input {
+  font-size: var(--body-base);
+  border: 1px solid var(--border--default);
+  border-radius: 0.5rem; /*naschval px*/
+  margin: 0;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center; align-self: stretch;
+  min-width: 15rem;
+}
+
+.section.center { align-items: center; }
+.testDiv { height: 63vh }
+.testDiv.yellow { background-color: lightgoldenrodyellow; }
+.testDiv.red { background-color: lightsalmon; }
+.testDiv.blue { background-color: lightblue; }
+.testDiv.green { background-color: lightgreen; }
