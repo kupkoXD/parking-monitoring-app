@@ -1,0 +1,107 @@
+[
+    {
+        "timestamp": "2025-05-21 13:36:51",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:36:56",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:01",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:06",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:11",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:16",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:21",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:26",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:31",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:36",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:41",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:46",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:51",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:37:56",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:38:01",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:38:06",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:38:11",
+        "car_count": 1,
+        "free_spaces": 2
+    },
+    {
+        "timestamp": "2025-05-21 13:38:16",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:38:22",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:38:27",
+        "car_count": 0,
+        "free_spaces": 3
+    },
+    {
+        "timestamp": "2025-05-21 13:38:32",
+        "car_count": 0,
+        "free_spaces": 3
+    }
+]

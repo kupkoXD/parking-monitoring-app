@@ -4,7 +4,7 @@ import React from "react";
 function Footer() {
     return (
         <div className="Footer">
-            <p>© 2024 Jakub Janok.</p>
+            <p>© 2025 Jakub Janok.</p>
         </div>
     );
 }
