@@ -20,7 +20,7 @@ Tento systém deteguje a vizualizuje obsadenosť parkovacích miest pomocou kame
 
 1. Naklonujte repozitár alebo si ho stiahnite ako `.zip`:
     ```
-    tu adresu gitu
+    https://github.com/kupkoXD/parking-monitoring-app
     ```
 
 2. Otvorte projekt v PyCharme a nastavte Python 3.11+ vo virtuálnom prostredí.
